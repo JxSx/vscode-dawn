@@ -8,19 +8,19 @@ export function activate(context: vscode.ExtensionContext) {
   let NEXT_TERM_ID = 1;
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "dawn-plugin" is now active!');
+  console.log('Congratulations, your extension "vscode-dawn" is now active!');
 
   console.log("Terminals: " + (<any>vscode.window).terminals.length);
 
   const DN_COMMADNS: any = {
-    "dawn-plugin.dn.init": () => {
+    "vscode-dawn.dn.init": () => {
       vscode.window.showInformationMessage('Dawn 初始化项目中...');
 
       const terminal = vscode.window.createTerminal(`Dawn Terminal #${NEXT_TERM_ID++}`);
       terminal.show();
       terminal.sendText('dn init');
     },
-    "dawn-plugin.dn.dev": () => {
+    "vscode-dawn.dn.dev": () => {
       vscode.window.showInformationMessage('Dawn 启动中....');
 
       const terminal = vscode.window.createTerminal(`Dawn Terminal #${NEXT_TERM_ID++}`);

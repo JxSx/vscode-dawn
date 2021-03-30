@@ -1,6 +1,6 @@
 {
-  "name": "dawn-plugin",
-  "displayName": "Dawn Plugin",
+  "name": "vscode-dawn",
+  "displayName": "VSCode Dawn Plugin",
   "description": "dawn cli",
   "version": "0.0.1",
   "engines": {
@@ -10,19 +10,19 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:dawn-plugin.dn.init",
-    "onCommand:dawn-plugin.dn.dev"
+    "onCommand:vscode-dawn.dn.init",
+    "onCommand:vscode-dawn.dn.dev"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "dawn-plugin.dn.dev",
+        "command": "vscode-dawn.dn.dev",
         "title": "dn dev",
         "category": "Dawn"
       },
       {
-        "command": "dawn-plugin.dn.init",
+        "command": "vscode-dawn.dn.init",
         "title": "dn init",
         "category": "Dawn"
       }
