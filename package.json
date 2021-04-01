@@ -1,8 +1,8 @@
 {
 	"name": "vscode-dawn",
 	"displayName": "vscode-dawn",
-	"description": "Dawn Command Line Plugin For VSCode",
-	"version": "0.0.2",
+	"description": "Dawn Command Line For VSCode",
+	"version": "0.0.3",
 	"engines": {
 		"vscode": "^1.54.0"
 	},
@@ -16,7 +16,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"*"
+		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -26,59 +26,11 @@
 				"title": "Show Dawn Command Line",
 				"category": "Dawn",
 				"icon": {
-					"light": "assets/light/dawn.svg",
-					"dark": "assets/dark/dawn.svg"
+					"light": "assets/light/cli.svg",
+					"dark": "assets/dark/cli.svg"
 				}
-			},
-			{
-				"command": "vscode-dawn.dn.init",
-				"title": "dn init",
-				"category": "Dawn",
-				"icon": {
-					"light": "assets/light/start.svg",
-					"dark": "assets/dark/start.svg"
-				}
-			},
-			{
-				"command": "vscode-dawn.dn.dev",
-				"title": "dn dev",
-				"category": "Dawn"
-			},
-			{
-				"command": "vscode-dawn.dn.test",
-				"title": "dn test",
-				"category": "Dawn"
-			},
-			{
-				"command": "vscode-dawn.dn.build",
-				"title": "dn build",
-				"category": "Dawn"
-			},
-			{
-				"command": "vscode-dawn.dn.publish",
-				"title": "dn publish",
-				"category": "Dawn"
-			},
-			{
-				"command": "vscode-dawn.dn.update",
-				"title": "dn update",
-				"category": "Dawn"
-			},
-			{
-				"command": "vscode-dawn.dn.help",
-				"title": "dn help",
-				"category": "Dawn"
 			}
-		],
-		"menus": {
-			"scm/title": [
-				{
-					"when": "scmProvider == git",
-					"command": "vscode-dawn.showDawn",
-					"group": "navigation"
-				}
-			]
-		}
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
