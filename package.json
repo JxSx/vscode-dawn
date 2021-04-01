@@ -8,6 +8,10 @@
 	},
 	"publisher": "JiaXin",
 	"icon": "assets/logo.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JxSx/vscode-dawn.git"
+	},
 	"categories": [
 		"Other"
 	],
