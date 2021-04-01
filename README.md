@@ -1,6 +1,6 @@
 # Dawn Command Line For VSCode
 
-## Features
+## 功能
 
 ### ✨ 初始化工程
 
@@ -29,5 +29,10 @@
 ### 🙏 帮助
 
 > dn -h
+
+## 示例
+![demo](./assets/demo-01.png)
+
+![demo](./assets/demo-02.png)
 
 **Enjoy!**
